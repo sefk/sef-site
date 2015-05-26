@@ -1,6 +1,9 @@
 # sef.kloninger.com AKA sefk.github.io 
 
-This is my personal blog.  It is a Nikola static site hosted by Github pages.  This repo contains both the source files. 
+This is my personal blog. It is a Nikola static site hosted by
+Github pages.  This repo contains the source files. The repo for
+the target files, [sefk.github.io](http://github.com/sefk/sefk.github.io)
+is included as a submodule.
 
 # Instructions
 
@@ -12,9 +15,8 @@ The general workflow is:
 2. **Review**. Nikola has a nice feature to automatically rebuild your
    project whenever something changes.  The -b option fires up a
    localhost browser that refreshes with every save.  Very nice
-   workflow.  Command is ```nikola -b -p 8888```.  The extra port
-   because the default, 8000, usually collides with my dev environment or
-   something similar.
+   workflow.  Command is ```nikola auto -b -p 8888```. The port
+   is in case the default port (8000) collides your dev environment.
 
 3. **Publish**.  Check in the changes to this repo and the ```output``` 
    subdirectory which has the build products.
